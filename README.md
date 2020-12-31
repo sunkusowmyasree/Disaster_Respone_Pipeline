@@ -1,6 +1,3 @@
-# Disaster-Response-Pipeline
-Creating ML Pipeline to analyze disaster data provided by Figure Eight Company
-
 DISASTER RESPONSE PIPELINE PROJECT
 ------------------------------------
 The three major aspects of this project is as follows:
