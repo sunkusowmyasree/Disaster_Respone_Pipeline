@@ -92,7 +92,10 @@ def build_model():
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('clf', MultiOutputClassifier(KNeighborsClassifier()))
+        #('clf', MultiOutputClassifier(GradientBoostingClassifier(n_estimators=100, learning_rate=1.0,max_depth=1, random_state=0)))
+        #('clf', MultiOutputClassifier(AdaBoostClassifier(n_estimators=200, random_state=0)))
+        ('clf', MultiOutputClassifier(SGDClassifier()))
+        #('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
 
     # Parameters for GridSearchCV
