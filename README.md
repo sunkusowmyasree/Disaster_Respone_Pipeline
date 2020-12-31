@@ -23,7 +23,7 @@ File Structure
 	
 * `ML model` folder contains the following:
     * `ml_pipeline.py`: contains scripts that create ml pipeline
-    * `model_ada_fit.pickle`: contains the AdaBoostClassifier pickle fit file
+    * `disaster_resonse.pkl`: contains the Classifier pickle fit file
     * `train_classifier.py`: script to train_classifier.py
 	
 * `app` folder contains the following:
@@ -56,8 +56,9 @@ RESULTS
 ---------------------------
 Results are as follows:
 
-1.The avg precision and F2 score obtained from a test run using SGDClassifier are 0.75 and 0.61 respectively
-2.The avg precision and F2 score obtained from a test run using GradientBoostingClassifier 0.72 and 0.63 respectively
+1. The weighted avg precision and F1 score obtained from a test run using SGDClassifier are 0.75 and 0.61 respectively
+2. The weighted avg precision and F1 score obtained from a test run using RandomForestClassifier 0.75 and 0.57 respectively
+3. The weighted avg precision and F1 score obtained from a test run using GradientBoostingClassifier 0.70 and 0.60 respectively
 
 Extending this
 ----------------------
