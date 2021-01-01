@@ -31,8 +31,12 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.metrics import classification_report
-from sklearn.neighbors import KNeighborsClassifier
+#from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import GradientBoostingClassifier
+#from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.linear_model import SGDClassifier
 
 
 def load_data(database_filepath):
@@ -125,7 +129,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     y_pred = model.predict(X_test)
 
     # Print out the full classification report
-    print(classification_report(y_test, y_pred, target_names=categories))
+    print(classification_report(Y_test, y_pred, target_names=category_names))
 
 def save_model(model, model_filepath):
     """
