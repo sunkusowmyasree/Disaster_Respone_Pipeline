@@ -6,6 +6,8 @@ The three major aspects of this project is as follows:
 * ML Pipeline - Build ML Pipeline 
 * Flask web-app displaying analysis from data
 
+A __web app__ is created with Flask and Bootstrap for Natural Language Processing (__NLP__). The app provides an __interface__ for new messages, (e.g. Twitter messages scanned by disaster relief agencies in a _Disaster Response_ situation). Whenever you type a message it is classified into 37 Categories based on the learnings from the trained dataset
+
 File Structure
 ----------------------
 * `requirements.txt`: contains the environment requirements to run program
@@ -45,7 +47,7 @@ INSTALLATION
        - `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
 	   
     - To run ML pipeline that trains classifier and saves
-        - `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+        - `python ML model/train_classifier.py data/DisasterResponse.db ML model/disaster_response.pkl`
 
 2. Run the following command in the app's directory to run your web app.
     `python3 app/run.py
